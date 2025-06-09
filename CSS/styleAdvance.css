@@ -1,0 +1,70 @@
+/* Targeted Selecttors */
+p{
+    background-color: orange;
+}
+/*Descendent Selector เลือกทั้งหมดใน div*/
+div p{
+    background-color: aquamarine;
+}
+
+/*Child Selector เลือกบางตัวใน div*/
+div>p{
+    background-color: yellow;
+}
+
+
+/* Style by Attribute */
+a{
+    background-color: orange;
+}
+a[target]{
+    background-color: red;
+    color: white;
+}
+a[target='_blank']{
+    background-color: black;
+    color: aqua;
+}
+a[target='_self']{
+    color: black;
+}
+
+
+/* Special Attribute */
+input[type="email"],input[type="text"]{
+    width: 50%;
+    margin-bottom: 5px;
+}
+input[type='submit']{
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+/*Pseudo Selectors*/
+/*
+li:first-child{
+    background-color: red;
+}
+li:last-child{
+    background-color: aqua;
+}
+li:nth-child(5){ /*นับจากบนลงล่าง
+    background-color: green;
+}
+
+li:nth-child(7){
+    background-color: orange;
+}
+li:nth-last-child(4){ /*นับจากล่างขึ้นบน
+    background-color: blue;
+}*/
+li:nth-child(2n){ /*หำหนดจำนวน*/
+    background-color: antiquewhite;
+}
+
+.is-required::before{
+    content: "*";
+    color: red;
+    padding-left: 2px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+</head>
+<body>
+    <h1>ลงทะเบียน</h1>
+    <form>
+        <div>
+            <label for="firstname">ชื่อจริง</label>
+            <input type="text" name="fname" placeholder="ป้อนชื่อของคุณ (A-Z)" required>
+        </div>
+        <div>
+            <label for="lastname">นามสกุล</label>
+            <input type="text"name="lname" placeholder="ป้อนนามสกุลของคุณ (A-Z)">
+        </div>
+        <div>
+            <label for="lastname">E-Mail</label>
+            <input type="email" name="email" placeholder="กรอกอีเมลล์">
+        </div>
+        <div>
+            <label for="lastname">Phone</label>
+            <input type="tel" name="tel">
+        </div>
+        <div>
+            <label for="age">อายุ</label>
+            <input type="number" name="age" min="15" max="99">
+        </div>
+        <div>
+            <label for="age">วันเกิด</label>
+            <input type="date" name="age" min="15" max="99">
+        </div>
+        <div>
+            <label for="">ที่อยู่</label>
+            <textarea name="" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="lastname">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาโท">ปริญญาโท</option>
+            </select>
+        </div>
+        <div>
+            <label for="lastname">เพศ</label>
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">กำหนดเอง
+        </div>
+        <div>
+            <label for="lastname">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="fav"> ทำเว็บ
+            <input type="checkbox" name="fav"> สร้างเกม
+            <input type="checkbox" name="fav"> ดูหนัง
+            <input type="checkbox" name="fav"> อื่นๆ
+        </div>
+        <div>
+            <label for="lastname">แนบเอกสาร</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="lastname">เว็บไซต์</label>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" value="บันทีกข้อมูล"> 
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between; /*กำหนดตำแหน่ง Item ให้แสดง ซ้าย ขวา หรือตรงกลาง*/ 
+    /*align-items: flex-end; /*กำหนดตำแหน่ง Item ตรงข้ามกับแนวหลัก*/
+}
+.item{
+    background-color: orange;
+    border: 1px solid black;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.item-2{
+    /*flex-basis: 500px; /*คั้งค่า Item ให้ปรับขนาดบางคัวที่เลือก*/
+}
+
+.item-5{
+    /*flex-shrink: 2; /*ตั้งค่าให้ Item หดตัวมากกว่าเดิม 1-2-3 เท่าตามขนาดที่ระบุ*/
+}
+.item-7{
+    /*flex-grow: 2; /*ตั้งค่า Item ให้ขยายตัวมากกว่าตัวอื่น 1-2-3 เท่าตามที่ระบุ*/
+}
